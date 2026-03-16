@@ -55,7 +55,7 @@ export default function KpiCard({ data, delay = 0 }) {
       <div style={{
         fontSize: '12px',
         fontWeight: 500,
-        color: 'rgba(0,0,0,0.55)',
+        color: '#1d1d1f',
         marginBottom: '10px',
         textAlign: 'right',
         letterSpacing: '0.02em',
