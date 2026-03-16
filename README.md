@@ -62,3 +62,44 @@ A modern, dark-themed cybersecurity monitoring dashboard built with React, Tailw
 
 Currently all data is hardcoded in `src/data/dashboardData.js` as static arrays. To connect a live database:
 
+---
+
+## Project Structure
+```
+seezo-dashboard/
+├── public/
+│   └── logo.png
+├── src/
+│   ├── components/
+│   │   ├── dashboard/
+│   │   │   ├── TopSection.jsx        # Greeting + KPI cards + Check Alerts
+│   │   │   ├── KpiCard.jsx           # Individual KPI card
+│   │   │   ├── GraphSection.jsx      # Row 1 charts layout
+│   │   │   ├── FirewallChart.jsx     # Area chart
+│   │   │   ├── AlertVolumeChart.jsx  # Bar chart
+│   │   │   ├── BreakdownChart.jsx    # Multi-line chart
+│   │   │   ├── BottomSection.jsx     # Row 2 layout
+│   │   │   ├── OperationsChart.jsx   # Heatmap grid
+│   │   │   └── AlertQueue.jsx        # Alert table
+│   │   ├── Sidebar.jsx               # Left nav
+│   │   └── Topbar.jsx                # Top nav bar
+│   ├── data/
+│   │   └── dashboardData.js          # All dummy data lives here
+│   ├── pages/
+│   │   ├── Dashboard.jsx
+│   │   ├── CheckAlertsPage.jsx
+│   │   ├── ProfilePage.jsx
+│   │   ├── SettingsPage.jsx
+│   │   ├── FilesPage.jsx
+│   │   ├── AnalyticsPage.jsx
+│   │   └── ExportsPage.jsx
+│   ├── App.jsx                       # Router + layout shell
+│   ├── main.jsx                      # Entry point
+│   └── index.css                     # Global styles + animations
+└── README.md
+```
+
+---
+
+Built with care for demo
+
